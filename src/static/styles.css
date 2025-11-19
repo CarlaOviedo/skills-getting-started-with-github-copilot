@@ -158,10 +158,37 @@ footer {
 }
 
 .participants-list {
-  list-style-type: disc;
-  margin-left: 20px;
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
   color: #333;
   font-size: 15px;
+  display: block;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 6px;
+  border-radius: 3px;
+}
+
+.participant-item + .participant-item {
+  margin-top: 6px;
+}
+
+.delete-btn {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 4px 6px;
+}
+
+.delete-btn:hover {
+  color: #8e0000;
 }
 
 .participants-section.info {
